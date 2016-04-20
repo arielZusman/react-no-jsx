@@ -51,10 +51,22 @@
         });
     });
 
+    var ContactForm = React.createClass({
+        propTypes:{
+            contact: React.PropTypes.object.isRequired
+        },
+        // TODO: Continue exercise 3 here
+        render: function(){
+            return (
+                React.createElement()
+            );
+        }
+    });
     var rootElement = 
         React.createElement('div', {},
             React.createElement('h1', {}, "Contacts"),
-            React.createElement('ul', {}, contactList));
+            React.createElement('ul', {}, contactList),
+            React.createElement(ContactForm, {}));
 
     ReactDOM.render(rootElement, document.getElementById('react-app'));
     </script>
